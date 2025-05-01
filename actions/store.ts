@@ -406,7 +406,7 @@ export async function updateStoreStatus(id: string, status: VendorStatus, reason
         // Send email with proper error handling
         try {
           const emailResult = await resend.emails.send({
-            from: 'Kartify Store Approval <info@mimos.com.bd>', 
+            from: 'BestWareHub Store Approval <info@mimos.com.bd>', 
             to: user.email,
             subject: "Your Store Application Has Been Approved",
             react: await ApprovalEmail({
@@ -441,7 +441,7 @@ export async function updateStoreStatus(id: string, status: VendorStatus, reason
         // Send rejection email with proper error handling
         try {
           const emailResult = await resend.emails.send({
-            from: 'Kartify Store Status <info@mimos.com.bd>', 
+            from: 'BestWareHub Store Status <info@mimos.com.bd>', 
             to: user.email,
             subject: "Your Store Application Status Update",
             react: await RejectionEmail({

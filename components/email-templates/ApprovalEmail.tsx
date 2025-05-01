@@ -29,13 +29,13 @@ export const ApprovalEmail: React.FC<ApprovalEmailProps> = ({
   return (
     <Html>
       <Head />
-      <Preview>Your Store Application Has Been Approved! - Kartify</Preview>
+      <Preview>Your Store Application Has Been Approved! - BestWareHub</Preview>
       <Body style={main}>
         <Container style={container}>
           <Section style={logoContainer}>
             <Row>
               <Column>
-                <Heading style={h1}>Kartify</Heading>
+                <Heading style={h1}>BestWareHub</Heading>
               </Column>
             </Row>
           </Section>
@@ -54,7 +54,7 @@ export const ApprovalEmail: React.FC<ApprovalEmailProps> = ({
             <Heading style={h2}>Congratulations, {userName}!</Heading>
             <Text style={paragraph}>
               We're thrilled to inform you that your store <strong>{storeName}</strong> has been 
-              approved and is ready to join the Kartify marketplace.
+              approved and is ready to join the BestWareHub marketplace.
             </Text>
 
             <Section style={featuresContainer}>
@@ -114,11 +114,11 @@ export const ApprovalEmail: React.FC<ApprovalEmailProps> = ({
             </Text>
 
             <Text style={paragraph}>
-              Welcome to the Kartify family!
+              Welcome to the BestWareHub family!
             </Text>
 
             <Text style={signatureText}>
-              The Kartify Team
+              The BestWareHub Team
             </Text>
           </Section>
 
@@ -126,7 +126,7 @@ export const ApprovalEmail: React.FC<ApprovalEmailProps> = ({
 
           <Section style={footer}>
             <Text style={footerText}>
-              © {new Date().getFullYear()} Kartify. All rights reserved.
+              © {new Date().getFullYear()} BestWareHub. All rights reserved.
             </Text>
             <Text style={footerText}>
               123 E-Commerce Street, Digital City, 98765

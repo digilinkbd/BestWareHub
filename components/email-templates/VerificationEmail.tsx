@@ -28,11 +28,11 @@ export const VerificationEmail: React.FC<VerificationEmailProps> = ({
   return (
     <Html>
       <Head />
-      <Preview>Verify your email address for Kartify</Preview>
+      <Preview>Verify your email address for BestWareHub</Preview>
       <Body style={main}>
         <Container style={container}>
           <Section style={logoContainer}>
-            <Heading style={h1}>Kartify</Heading>
+            <Heading style={h1}>BestWareHub</Heading>
           </Section>
           <Section style={content}>
             <Heading style={h2}>Verify your email address</Heading>
@@ -40,7 +40,7 @@ export const VerificationEmail: React.FC<VerificationEmailProps> = ({
               Hi {name},
             </Text>
             <Text style={paragraph}>
-              Thank you for signing up for Kartify. To complete your registration, please enter the verification code below:
+              Thank you for signing up for BestWareHub. To complete your registration, please enter the verification code below:
             </Text>
 
             <Row style={codeContainer}>
@@ -56,7 +56,7 @@ export const VerificationEmail: React.FC<VerificationEmailProps> = ({
             </Text>
             <Hr style={hr} />
             <Text style={footer}>
-              &copy; {new Date().getFullYear()} Kartify. All rights reserved.
+              &copy; {new Date().getFullYear()} BestWareHub. All rights reserved.
             </Text>
           </Section>
         </Container>

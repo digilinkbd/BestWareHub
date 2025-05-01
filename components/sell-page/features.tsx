@@ -93,7 +93,7 @@ const FeaturesSection = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-xl text-gray-300 max-w-3xl mx-auto"
           >
-            <span className="text-yellow-400">kartify</span> provides all the tools and features you need to build and grow your online business.
+            <span className="text-yellow-400">bestwarehub</span> provides all the tools and features you need to build and grow your online business.
           </motion.p>
         </div>
 

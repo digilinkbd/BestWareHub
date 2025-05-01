@@ -340,7 +340,7 @@ export default function Sidebar({ session, notifications = [] }: SidebarProps) {
           >
             <div className="flex items-center gap-2 text-blue-600">
               <Palette className="h-3 w-3 text-yellow-500" />
-              <span>Kartify</span>
+              <span>BestWareHub</span>
             </div>
             <span className="text-yellow-600 bg-yellow-100 px-1.5 py-0.5 rounded-sm text-[10px] font-medium">Active</span>
           </motion.div>

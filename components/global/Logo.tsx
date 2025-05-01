@@ -24,7 +24,7 @@ export default function Logo({
           </span>
         </div>
         <span className={cn(" font-black text-xl", size === "lg" && "text-4xl")}>
-          KARTIFY
+          BESTWAREHUB
         </span>
       </Link>
     );

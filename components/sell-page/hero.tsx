@@ -58,15 +58,15 @@ const HeroSection = () => {
             variants={itemVariants}
             className="text-4xl md:text-6xl lg:text-5xl font-bold text-white mb-6 leading-tight"
           >
-            start selling<br />on Kartify
+            start selling<br />on BestWareHub
           </motion.h1>
           
           <motion.p 
             variants={itemVariants}
             className="md:text-lg text-base text-white mb-10"
           >
-            Kartify was created to help businesses, no matter their size
-            - grow. Being from the region, Kartify is especially
+            BestWareHub was created to help businesses, no matter their size
+            - grow. Being from the region, BestWareHub is especially
             passionate about helping local businesses thrive, we look
             forward to helping you take your venture to the next level.
           </motion.p>

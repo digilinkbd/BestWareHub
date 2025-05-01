@@ -132,12 +132,12 @@ export default function LoginForm({ onSwitchToRegister, returnUrl = "/dashboard"
             </div>
             <h1 className="text-2xl font-bold">Activate Your Vendor Account</h1>
             <p className="text-center text-sm text-gray-600 max-w-sm">
-              Please log in with your credentials to complete the vendor activation process and start selling on Kartify.
+              Please log in with your credentials to complete the vendor activation process and start selling on BestWareHub.
             </p>
           </>
         ) : (
           <>
-            <h1 className="text-2xl font-bold">Welcome to Kartify</h1>
+            <h1 className="text-2xl font-bold">Welcome to BestWareHub</h1>
             <div className="text-center text-sm">
               Don&apos;t have an account?{" "}
               <button

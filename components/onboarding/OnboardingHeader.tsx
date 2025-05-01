@@ -20,7 +20,7 @@ export function OnboardingHeader() {
           >
             <Store className="h-6 w-6 text-white" />
           </motion.div>
-          <span className="text-xl font-bold text-white">KARTIFY</span>
+          <span className="text-xl font-bold text-white">BESTWAREHUB</span>
         </Link>
         
         <div className=" items-center space-x-4 md:flex hidden">

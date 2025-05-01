@@ -112,7 +112,7 @@ const footerStaticSections = [
   {
     title: "Discover Now",
     links: [
-      "kartify Digest",
+      "bestwarehub Digest",
       "Brand Glossary",
       "Best Mobile Phones",
       "Supermall",
@@ -248,7 +248,7 @@ export default function Footer() {
               <div>
                 <p className="text-xs text-gray-500">CUSTOMER HAPPINESS CENTER</p>
                 <Link href="#" className="text-sm font-medium">
-                  help.kartify.com
+                  help.bestwarehub.com
                 </Link>
               </div>
             </div>
@@ -259,7 +259,7 @@ export default function Footer() {
               <div>
                 <p className="text-xs text-gray-500">EMAIL SUPPORT</p>
                 <Link href="#" className="text-sm font-medium">
-                  care@kartify.com
+                  care@bestwarehub.com
                 </Link>
               </div>
             </div>

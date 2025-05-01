@@ -29,13 +29,13 @@ export const RejectionEmail: React.FC<RejectionEmailProps> = ({
   return (
     <Html>
       <Head />
-      <Preview>Update Regarding Your Store Application - Kartify</Preview>
+      <Preview>Update Regarding Your Store Application - BestWareHub</Preview>
       <Body style={main}>
         <Container style={container}>
           <Section style={logoContainer}>
             <Row>
               <Column>
-                <Heading style={h1}>Kartify</Heading>
+                <Heading style={h1}>BestWareHub</Heading>
               </Column>
             </Row>
           </Section>
@@ -46,7 +46,7 @@ export const RejectionEmail: React.FC<RejectionEmailProps> = ({
               Hello {userName},
             </Text>
             <Text style={paragraph}>
-              Thank you for your interest in becoming a vendor on the Kartify marketplace. We have carefully reviewed your store application for <strong>{storeName}</strong>.
+              Thank you for your interest in becoming a vendor on the BestWareHub marketplace. We have carefully reviewed your store application for <strong>{storeName}</strong>.
             </Text>
             <Text style={paragraph}>
               After thorough consideration, we regret to inform you that we are unable to approve your store application at this time.
@@ -111,12 +111,12 @@ export const RejectionEmail: React.FC<RejectionEmailProps> = ({
             </Section>
 
             <Text style={paragraph}>
-              If you have any questions or would like further clarification, please contact our vendor support team at <a href="mailto:vendor-support@kartify.com" style={linkStyle}>vendor-support@kartify.com</a>.
+              If you have any questions or would like further clarification, please contact our vendor support team at <a href="mailto:vendor-support@bestwarehub.com" style={linkStyle}>vendor-support@bestwarehub.com</a>.
             </Text>
 
             <Text style={signatureText}>
               Best regards,<br />
-              The Kartify Vendor Relations Team
+              The BestWareHub Vendor Relations Team
             </Text>
           </Section>
 
@@ -124,7 +124,7 @@ export const RejectionEmail: React.FC<RejectionEmailProps> = ({
 
           <Section style={footer}>
             <Text style={footerText}>
-              © {new Date().getFullYear()} Kartify. All rights reserved.
+              © {new Date().getFullYear()} BestWareHub. All rights reserved.
             </Text>
             <Text style={footerText}>
               123 E-Commerce Street, Digital City, 98765

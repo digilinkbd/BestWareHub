@@ -9,7 +9,7 @@ import { Star } from 'lucide-react'
 
 const testimonials = [
   {
-    quote: "Switching to Kartify was the best business decision I've made. My sales have increased by 200% in just three months!",
+    quote: "Switching to BestWareHub was the best business decision I've made. My sales have increased by 200% in just three months!",
     author: "Sarah Johnson",
     role: "Fashion Retailer",
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80",
@@ -90,7 +90,7 @@ const TestimonialsSection = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-xl text-gray-300 max-w-3xl mx-auto"
           >
-            Join thousands of satisfied sellers who have transformed their businesses with Kartify.
+            Join thousands of satisfied sellers who have transformed their businesses with BestWareHub.
           </motion.p>
         </div>
 

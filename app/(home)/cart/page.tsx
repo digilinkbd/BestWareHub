@@ -346,7 +346,7 @@ export default function CartPage() {
           <div className="mb-4 flex items-start">
             <img src="https://f.nooncdn.com/s/app/com/noon/icons/emi.svg" alt="EMI icon" className='w-6 h-6' />
             <div className="text-sm">
-              Earn 5% cashback with Mashreq Kartify Credit Card. 
+              Earn 5% cashback with Mashreq BestWareHub Credit Card. 
               <Link href="#" className="text-blue-500 ml-1">T&C apply.</Link>
             </div>
           </div>
@@ -376,7 +376,7 @@ export default function CartPage() {
           
           {/* Buy Now Pay Later */}
           <div className="mb-6 text-center">
-            <div className="mb-2 font-medium">Buy Now, Pay Later With Kartify EMI</div>
+            <div className="mb-2 font-medium">Buy Now, Pay Later With BestWareHub EMI</div>
             <p className="text-sm text-gray-600 mb-2">
               Available when you spend AED 500 with select cards from the banks below.
               <Link href="#" className="text-blue-500 ml-1 underline">Find out more</Link>

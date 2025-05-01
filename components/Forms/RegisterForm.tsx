@@ -86,7 +86,7 @@ export default function RegisterForm({ onSwitchToLogin, onSwitchToVerification, 
       className="flex flex-col md:gap-5 gap-6"
     >
       <div className="flex flex-col items-center gap-2">
-        <h1 className="text-2xl font-bold">Create an Account On Kartify</h1>
+        <h1 className="text-2xl font-bold">Create an Account On BestWareHub</h1>
         <div className="text-center text-sm">
           Already have an account?{" "}
           <button

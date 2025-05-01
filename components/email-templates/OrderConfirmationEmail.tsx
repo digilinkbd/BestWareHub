@@ -43,14 +43,14 @@ export const OrderConfirmationEmail: React.FC<OrderConfirmationEmailProps> = ({
   return (
     <Html>
       <Head />
-      <Preview>Thank you for your order #{order.orderNumber} from Kartify</Preview>
+      <Preview>Thank you for your order #{order.orderNumber} from BestWareHub</Preview>
       <Body style={main}>
         <Container style={container}>
           {/* Header with logo and order confirmation */}
           <Section style={headerSection}>
             <Row>
               <Column>
-                <Heading style={h1}>Kartify</Heading>
+                <Heading style={h1}>BestWareHub</Heading>
               </Column>
             </Row>
             <Row>
@@ -168,8 +168,8 @@ export const OrderConfirmationEmail: React.FC<OrderConfirmationEmailProps> = ({
             </Section>
             
             <Text style={footer}>
-              &copy; {new Date().getFullYear()} Kartify. All rights reserved.<br />
-              You're receiving this email because you made a purchase from Kartify.
+              &copy; {new Date().getFullYear()} BestWareHub. All rights reserved.<br />
+              You're receiving this email because you made a purchase from BestWareHub.
             </Text>
           </Section>
         </Container>
