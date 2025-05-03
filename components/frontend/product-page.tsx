@@ -12,6 +12,10 @@ import ProductSkeletonDetailed from './ProductSkeletonDetailed'
 import { useProductDetails, useSimilarProducts } from '@/hooks/useProduct'
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbSeparator } from '../ui/breadcrumb'
 
+export type SlugTypes = {
+  slug: string;
+};
+
 
 export default function ProductPage({slug}:SlugTypes) {
     const { product, isLoading } = useProductDetails(slug)
