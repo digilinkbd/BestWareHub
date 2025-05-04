@@ -56,14 +56,14 @@ export default function HomeHeader({ searchQuery, user }: NavProps) {
             >
               <Image
                 src="https://f.nooncdn.com/s/app/com/common/images/flags/ae.svg"
-                alt="UAE flag"
+                alt="BD Flag"
                 width={20}
                 height={20}
                 className="h-8 w-8"
               />
               <div className="flex flex-col font-medium items-start text-sm">
                 <span className="flex flex-col font-thin items-start text-sm">Deliver to</span>
-                <span className="flex flex-col font-semibold items-start text-sm">Dubai</span>
+                <span className="flex flex-col font-semibold items-start text-sm">BANGLADESH</span>
               </div>
               <motion.div
                 animate={{ rotate: [0, 10, 0] }}
@@ -85,8 +85,8 @@ export default function HomeHeader({ searchQuery, user }: NavProps) {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                العربية
-              </motion.button>
+                bangla
+             </motion.button>
               <Separator orientation="vertical" />
                 
               <div className="md:flex hidden">

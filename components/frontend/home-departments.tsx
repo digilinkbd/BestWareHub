@@ -74,7 +74,7 @@ export default function HomeDepartments() {
   const totalIndicators = Math.ceil(activeDepartments.length / (isMobile ? 8 : 8))
 
   return (
-    <div className="relative w-full max-w-[1500px] mx-auto px-4 py-5 bg-[#fff4d0]">
+    <div className="relative w-full max-w-[1500px] mx-auto px-4 py-5 bg-[#9d034c]">
       {/* Navigation Arrows */}
       {showLeftArrow && (
         <button
@@ -88,7 +88,7 @@ export default function HomeDepartments() {
       {showRightArrow && !isLoading && (
         <button
           onClick={() => scroll("right")}
-          className="absolute right-0 top-[38%] -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-lg md:block hidden hover:bg-gray-50 transition-colors"
+          className="absolute right-0 top-[38%] -translate-y-1/2 z-10 bg-white p-2 rounded-none shadow-lg md:block hidden hover:bg-gray-50 transition-colors"
           aria-label="Scroll right"
         >
           <ChevronRight className="h-6 w-6 text-gray-600" />
@@ -109,8 +109,8 @@ export default function HomeDepartments() {
         {isLoading ? (
           // Loading skeleton UI
           Array.from({ length: 15 }).map((_, index) => (
-            <div key={index} className="snap-start flex flex-col items-center gap-2">
-              <Skeleton className="w-full aspect-square rounded-full" />
+            <div key={index} className="snap-start flex flex-col items-center gap-3">
+              <Skeleton className="w-full aspect-square rounded-sm" />
               <Skeleton className="h-4 w-16" />
             </div>
           ))
@@ -124,7 +124,7 @@ export default function HomeDepartments() {
             <Link href={`/d/${dept.slug}`} key={dept.id} className="snap-start flex flex-col items-center gap-2 cursor-pointer group">
               <div className="relative w-full aspect-square overflow-hidden">
                 {/* Background Image */}
-                <div className="absolute inset-0 rounded-full overflow-hidden">
+                <div className="absolute inset-0 rounded-none overflow-hidden">
                   <Image
                     src={dept.image || "/placeholder.jpg"}
                     alt={dept.title}
@@ -157,7 +157,7 @@ export default function HomeDepartments() {
           {Array.from({ length: totalIndicators }).map((_, index) => (
             <div
               key={index}
-              className={`h-1.5 rounded-full transition-all duration-300 ${
+              className={`h-1.5 rounded-sm transition-all duration-300 ${
                 index === activeIndex ? "w-7 bg-yellow-400" : "w-1.5 bg-gray-400"
               }`}
             />

@@ -81,7 +81,7 @@ function HomeHero() {
       <div className="bg-[#14134D] w-full h-[60px] flex items-center justify-center">
         <img
           src="https://f.nooncdn.com/mpcms/EN0001/assets/280445e5-a57b-47f2-8136-83f69d4d6357.png?format=avif"
-          alt="Emirates NBD Offer"
+          alt="Summer Sale Going On"
           className="h-full object-contain"
         />
       </div>
