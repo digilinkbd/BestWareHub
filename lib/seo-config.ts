@@ -23,14 +23,24 @@ export const seoConfig = {
   organizationLogo: "/logo.png",
 
   // Default keywords
-  defaultKeywords: ["e-commerce", "online shopping", "Bangladesh", "electronics", "marketplace"],
+  defaultKeywords: [
+    "e-commerce",
+    "online shopping",
+    "Bangladesh",
+    "electronics",
+    "marketplace",
+    "home and decor",
+    "gadgets"
+  ],
 }
 
 /**
  * Get the full URL including domain
+ * @param path - relative URL path (e.g., "/product/abc")
+ * @returns full URL string
  */
 export function getFullUrl(path: string): string {
-  const baseUrl = seoConfig.siteUrl
+  const siteUrl = seoConfig.siteUrl
   const normalizedPath = path.startsWith("/") ? path : `/${path}`
-  return `${baseUrl}${normalizedPath}`
+  return `${siteUrl}${normalizedPath}`
 }
