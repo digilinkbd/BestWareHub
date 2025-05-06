@@ -1,6 +1,6 @@
 export const siteConfig = {
     name: "BestWareHub",
-    title: "Where variety sparks the opportunity",
+    title: "BestWareHub-Where variety sparks the opportunity",
     titleShort: "BestWareHub", 
     url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
     //url: "https://bestwarehub.com",

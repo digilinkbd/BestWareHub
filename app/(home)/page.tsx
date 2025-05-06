@@ -22,8 +22,6 @@ export default function HomePage() {
 
   // Fetch departments data for the dynamic components
   const { departments, isLoading: isLoadingDepartments } = useDepartments();
-
-
   return (
     <div className="min-h-screen md:mx-2">
       <HomeHero />
