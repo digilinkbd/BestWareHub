@@ -30,7 +30,7 @@ export const seoConfig = {
     "electronics",
     "marketplace",
     "home and decor",
-    "gadgets"
+    "gadgets",
   ],
 }
 

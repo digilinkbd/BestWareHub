@@ -1,61 +1,48 @@
-import { seoConfig } from "@/lib/seo-config"
+import type { MetadataRoute } from "next"
+import { siteConfig } from "@/config/site"
 
-// Replace these with your actual data fetching functions
-async function getAllProducts() {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const baseUrl = siteConfig.url || process.env.NEXT_PUBLIC_SITE_URL || "https://bestwarehub.com"
+
+  // For very large sites, return a sitemap index instead
   return [
-    { slug: "product-1", updatedAt: new Date().toISOString() },
-    { slug: "product-2", updatedAt: new Date().toISOString() },
-  ]
-}
-
-async function getAllCategories() {
-  return [{ slug: "category-1" }, { slug: "category-2" }]
-}
-
-export default async function sitemap() {
-  const baseUrl = seoConfig.siteUrl
-
-  // Get dynamic data
-  const products = await getAllProducts()
-  const categories = await getAllCategories()
-
-  // Product URLs
-  const productUrls = products.map((product) => ({
-    url: `${baseUrl}/p/${product.slug}`,
-    lastModified: product.updatedAt,
-    changeFrequency: "weekly",
-    priority: 0.8,
-  }))
-
-  // Category URLs
-  const categoryUrls = categories.map((category) => ({
-    url: `${baseUrl}/c/${category.slug}`,
-    lastModified: new Date().toISOString(),
-    changeFrequency: "monthly",
-    priority: 0.7,
-  }))
-
-  // Static pages
-  const staticPages = [
+    {
+      url: `${baseUrl}/sitemaps/products`,
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/sitemaps/categories`,
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/sitemaps/departments`,
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/sitemaps/subcategories`,
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/sitemaps/brands`,
+      lastModified: new Date(),
+    },
     {
       url: baseUrl,
-      lastModified: new Date().toISOString(),
+      lastModified: new Date(),
       changeFrequency: "daily",
       priority: 1.0,
     },
     {
       url: `${baseUrl}/about`,
-      lastModified: new Date().toISOString(),
+      lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.5,
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/contact`,
-      lastModified: new Date().toISOString(),
+      lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.5,
+      priority: 0.7,
     },
   ]
-
-  return [...staticPages, ...categoryUrls, ...productUrls]
 }

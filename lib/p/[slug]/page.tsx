@@ -12,12 +12,8 @@ export async function generateMetadata({
   params: { slug: string }
 }): Promise<Metadata> {
   try {
-    // Await the params object before accessing its properties
-    const resolvedParams = await params
-    const slug = resolvedParams.slug
-
     // Fetch product data using your existing function
-    const product = await getProductBySlug(slug)
+    const product = await getProductBySlug(params.slug)
 
     if (!product) {
       return generateSeoMetadata({
@@ -44,7 +40,7 @@ export async function generateMetadata({
       keywords: productKeywords,
       image: product.imageUrl || product.productImages?.[0] || "",
       url: `/p/${product.slug}`,
-      type: "website", // Changed from "product" to "website" to fix OpenGraph type error
+      type: "product",
       // Additional product-specific metadata
       publishedTime: product.createdAt?.toISOString(),
       modifiedTime: product.updatedAt?.toISOString(),
@@ -74,21 +70,17 @@ export default async function Page({
 }: {
   params: { slug: string }
 }) {
-  // Await the params object before accessing its properties
-  const resolvedParams = await params
-  const slug = resolvedParams.slug
-
   // Fetch product data
-  const product = await getProductBySlug(slug)
+  const product = await getProductBySlug(params.slug)
 
-  // Handle case where product is not found
+  // If product not found, show 404
   if (!product) {
     notFound()
   }
 
   return (
-    <div>
-      <ProductPage slug={slug} />
+    <>
+      <ProductPage slug={params.slug} />
 
       {/* Add JSON-LD structured data */}
       {product && (
@@ -280,6 +272,6 @@ export default async function Page({
           }}
         />
       )}
-    </div>
+    </>
   )
 }

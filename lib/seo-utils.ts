@@ -35,11 +35,9 @@ export function generateMetadata({
   const pageUrl = url ? `${baseUrl}${url}` : baseUrl
 
   // Restrict OpenGraph type to only allowed values
-  const validOgTypes = ["article", "website"] as const
+  const validOgTypes = ["article", "website", "product"] as const
   type OpenGraphType = (typeof validOgTypes)[number]
-  const ogType: OpenGraphType = validOgTypes.includes(type as OpenGraphType)
-    ? (type as OpenGraphType)
-    : "website"
+  const ogType: OpenGraphType = validOgTypes.includes(type as OpenGraphType) ? (type as OpenGraphType) : "website"
 
   return {
     title: title,
@@ -69,6 +67,11 @@ export function generateMetadata({
           modifiedTime,
           section: category,
           tags,
+        },
+      }),
+      ...(ogType === "product" && {
+        product: {
+          category,
         },
       }),
     },
