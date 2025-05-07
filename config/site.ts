@@ -1,8 +1,9 @@
 export const siteConfig = {
-  name: "Next.js Starter",
+  name: "BestWareHub",
+  title: "BestWareHub - Your One-Stop Shop for Gadgets, Electronics, Home Decor, Fashions, and More",
   url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000" || "https://bestwarehub.com",
-  description: "A production-ready Next.js starter with TypeScript, ESLint, Prettier, and more.",
-  ogImage: "/og-image.png",
+  description: "BestWareHub is your ultimate destination for the latest gadgets, electronics, home decor, fashions, and more. Shop now for the best deals and exclusive offers!",
+  ogImage: "/opengraph-image",
   links: {
     twitter: "https://twitter.com/bestwarehub",
     facebook: "https://facebook.com/bestwarehub",
