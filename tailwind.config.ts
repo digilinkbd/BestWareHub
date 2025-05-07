@@ -26,7 +26,7 @@ export default withUt({
   	extend: {
   		colors: {
   			border: 'hsl(var(--border))',
-  			mainPrimary: '#9d034c',
+  			mainPrimary: '#EB3349',
   			input: 'hsl(var(--input))',
   			ring: 'hsl(var(--ring))',
   			background: 'hsl(var(--background))',
