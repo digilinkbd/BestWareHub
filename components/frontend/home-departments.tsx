@@ -74,7 +74,7 @@ export default function HomeDepartments() {
   const totalIndicators = Math.ceil(activeDepartments.length / (isMobile ? 8 : 8))
 
   return (
-    <div className="relative w-full max-w-[1500px] mx-auto px-4 py-5 bg-[#9d034c]">
+    <div className="relative w-full max-w-[1500px] mx-auto px-4 py-5 bg-mainPrimary">
       {/* Navigation Arrows */}
       {showLeftArrow && (
         <button

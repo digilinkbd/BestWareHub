@@ -44,7 +44,7 @@ export default function HomePage() {
             mainText: "EXPLORE",
             highlightText: departments[0]?.title?.toUpperCase() || "CATEGORIES"
           }}
-          bgColor="bg-amber-100"
+          bgColor="bg-[#FFFFFF]"
           viewAllLink={`/department/${departments[0]?.slug}`}
           isLoading={isLoadingDepartments}
         />
@@ -67,7 +67,7 @@ export default function HomePage() {
             mainText: "TRENDING IN",
             highlightText: departments[1]?.title?.toUpperCase() || "PRODUCTS"
           }}
-          bgColor="bg-[#feead5]"
+          bgColor="bg-[#FFFFFF]"
           viewAllLink={`/department/${departments[1]?.slug}`}
           isLoading={isLoadingDepartments}
         />
@@ -81,7 +81,7 @@ export default function HomePage() {
             mainText: "EXPLORE",
             highlightText: "ELECTRONICS"
           }}
-          bgColor="bg-[#fff3ba]"
+          bgColor="bg-[#FFFFFF]"
           showPagination={false}
           viewAllLink={`/department/${departments[2]?.slug}`}
           isLoading={isLoadingDepartments}

@@ -209,9 +209,9 @@ export default function MegaCategory() {
       </div>
 
       {/* In Focus Section */}
-      <div className="bg-[#ffe367] p-4 w-full md:w-1/3 h-full md:block hidden">
+      <div className="bg-[#ce4830] p-4 w-full md:w-1/3 h-full md:block hidden">
         <h2 className="text-base font-bold mb-4">
-          IN <span className="text-[#e41427] font-black">FOCUS</span>
+          IN <span className="text-[#144ce4] font-black">FOCUS</span>
         </h2>
         
         {isPromotionsLoading ? (
