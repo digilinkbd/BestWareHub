@@ -157,7 +157,7 @@ export default function MegaCategory() {
           <div className="flex justify-between items-center mb-4">
             <div className="flex items-center gap-3">
               <h2 className="text-white font-bold text-xl tracking-wide">MEGA DEALS</h2>
-              <span className="text-[#801402] font-black hidden lg:block">24 HOURS ONLY</span>
+              <span className="text-[#d44830] font-black hidden lg:block">24 HOURS ONLY</span>
             </div>
             <Button size="sm" className="bg-white hover:bg-gray-50 text-black font-semibold rounded-md px-4">
               VIEW ALL
