@@ -38,7 +38,7 @@ export default function DeliveryInfo({ product, vendor, store }: DeliveryInfoPro
               <h3 className="text-sm font-medium line-clamp-2">{product.title}</h3>
               <div className="flex items-center gap-2 mt-1">
                 <span className="text-sm font-medium">
-                  AED {(product.salePrice || product.productPrice).toFixed(2)}
+                  BDT {(product.salePrice || product.productPrice).toFixed(2)}
                 </span>
                 {product.isFeatured && (
                   <span className="bg-yellow-400 text-[10px] px-1.5 py-0.5 rounded font-medium">express</span>
@@ -139,7 +139,7 @@ export default function DeliveryInfo({ product, vendor, store }: DeliveryInfoPro
               <div>
                 <p className="font-medium text-sm">TRUSTED SHIPPING</p>
                 <p className="text-sm text-muted-foreground">
-                  Free shipping when you spend AED 100 and above on express items
+                  Free shipping when you spend BDT 100 and above on express items
                 </p>
               </div>
             </div>

@@ -45,21 +45,21 @@ export default function ProductInfo({ product, onAddToCart }: ProductInfoProps) 
           <div className="flex items-center">
             <span className="text-sm text-muted-foreground">Was:</span>
             <span className="ml-2 text-sm line-through text-muted-foreground">
-              AED {product.productPrice.toFixed(2)}
+              BDT {product.productPrice.toFixed(2)}
             </span>
           </div>
         )}
 
         <div className="flex items-center">
           <span className="text-sm text-muted-foreground">Now:</span>
-          <span className="ml-2 text-xl font-bold">AED {(product.salePrice || product.productPrice).toFixed(2)}</span>
+          <span className="ml-2 text-xl font-bold">BDT {(product.salePrice || product.productPrice).toFixed(2)}</span>
           <span className="ml-2 text-sm text-muted-foreground">Inclusive of VAT</span>
         </div>
 
         {savingsAmount > 0 && (
           <div className="flex items-center">
             <span className="text-sm text-muted-foreground">Saving:</span>
-            <span className="ml-2 text-sm">AED {savingsAmount.toFixed(2)}</span>
+            <span className="ml-2 text-sm">BDT {savingsAmount.toFixed(2)}</span>
             <span className="ml-2 text-sm bg-green-100 text-green-800 px-1 rounded">{discountPercentage}% OFF</span>
           </div>
         )}
@@ -97,7 +97,7 @@ export default function ProductInfo({ product, onAddToCart }: ProductInfoProps) 
 
       <div className="flex items-center gap-2">
         <ShoppingCart className="h-4 w-4" />
-        <p className="text-sm">10 AED shipping fee applies per seller</p>
+        <p className="text-sm">10 BDT shipping fee applies per seller</p>
       </div>
 
       <div className="bg-green-100 p-4 rounded-md">

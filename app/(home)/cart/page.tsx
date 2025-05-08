@@ -105,8 +105,8 @@ export default function CartPage() {
                     {/* Price section for mobile */}
                     <div className="flex justify-between items-center mt-1 mb-2">
                       <div>
-                        <div className="font-bold">AED {formattedItem.price}</div>
-                        <div className="text-sm line-through text-gray-500">AED {formattedItem.originalPrice}</div>
+                        <div className="font-bold">BDT {formattedItem.price}</div>
+                        <div className="text-sm line-through text-gray-500">BDT {formattedItem.originalPrice}</div>
                         <div className="text-sm text-green-600 font-medium">{formattedItem.discountPercentage}% OFF</div>
                       </div>
                       
@@ -234,8 +234,8 @@ export default function CartPage() {
                   {/* Price section for desktop - keep original */}
                   <div className="hidden sm:flex md:flex-col items-end">
                     <div className="text-right">
-                      <div className="font-bold mb-1">AED {formattedItem.price}</div>
-                      <div className="text-sm line-through text-gray-500">AED {formattedItem.originalPrice}</div>
+                      <div className="font-bold mb-1">BDT {formattedItem.price}</div>
+                      <div className="text-sm line-through text-gray-500">BDT {formattedItem.originalPrice}</div>
                       <div className="text-sm text-green-600 font-medium">{formattedItem.discountPercentage}% OFF</div>
                     </div>
                     
@@ -305,7 +305,7 @@ export default function CartPage() {
                 <div className="space-y-3 text-sm">
                   <div className="flex justify-between">
                     <span className="text-gray-600">Subtotal ({getItemCount()} items)</span>
-                    <span>AED {getTotal().toFixed(2)}</span>
+                    <span>BDT {getTotal().toFixed(2)}</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-600">Shipping Fee</span>
@@ -313,7 +313,7 @@ export default function CartPage() {
                   </div>
                   <div className="flex justify-between pt-3 border-t font-bold">
                     <span>Total <span className="text-gray-500 font-normal text-lg">(Inclusive of VAT)</span></span>
-                    <span className='text-xl'>AED {getTotal().toFixed(2)}</span>
+                    <span className='text-xl'>BDT {getTotal().toFixed(2)}</span>
                   </div>
                 </div>
               </div>
@@ -325,7 +325,7 @@ export default function CartPage() {
                   </div>
                   <div className="flex-grow">
                     <p className="text-sm text-gray-600">
-                      Monthly payment plans from AED 500
+                      Monthly payment plans from BDT 500
                       <span className="text-yellow-400 ml-1 cursor-pointer underline font-bold">View more details</span>
                     </p>
                   </div>
@@ -358,7 +358,7 @@ export default function CartPage() {
                 <img src="https://f.nooncdn.com/s/app/com/noon/images/tabby.svg" alt="Tabby" className="h-6" />
               </div>
               <div className="text-sm">
-                Pay 4 interest free payments of AED {(getTotal() / 4).toFixed(2)}
+                Pay 4 interest free payments of BDT {(getTotal() / 4).toFixed(2)}
                 <Link href="#" className="block text-blue-500">Learn more</Link>
               </div>
             </div>
@@ -368,7 +368,7 @@ export default function CartPage() {
                 <img src="https://k.nooncdn.com/s/app/com/noon/images/tamara_logo.svg" alt="Tamara" className="h-6" />
               </div>
               <div className="text-sm">
-                Split in 4 payments of AED {(getTotal() / 4).toFixed(2)}. No interest. No late fees.
+                Split in 4 payments of BDT {(getTotal() / 4).toFixed(2)}. No interest. No late fees.
                 <Link href="#" className="block text-blue-500">Learn more</Link>
               </div>
             </div>
@@ -378,7 +378,7 @@ export default function CartPage() {
           <div className="mb-6 text-center">
             <div className="mb-2 font-medium">Buy Now, Pay Later With BestWareHub EMI</div>
             <p className="text-sm text-gray-600 mb-2">
-              Available when you spend AED 500 with select cards from the banks below.
+              Available when you spend BDT 500 with select cards from the banks below.
               <Link href="#" className="text-blue-500 ml-1 underline">Find out more</Link>
             </p>
             
@@ -408,7 +408,7 @@ export default function CartPage() {
       <div className="fixed bottom-16 left-0 right-0 bg-white border-t p-4 sm:hidden z-10">
         <div className="flex justify-between items-center mb-2">
           <span className="text-gray-600">Total:</span>
-          <span className="font-bold text-lg">AED {getTotal().toFixed(2)}</span>
+          <span className="font-bold text-lg">BDT {getTotal().toFixed(2)}</span>
         </div>
         <motion.button 
           whileTap={{ scale: 0.98 }}

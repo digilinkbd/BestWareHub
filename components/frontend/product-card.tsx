@@ -314,7 +314,7 @@ const ProductCard = ({
           {/* Price */}
           <div className="mb-2">
             <div className="flex items-center gap-1.5">
-              <span className="text-sm font-medium">AED</span>
+              <span className="text-sm font-medium">BDT</span>
               <span className="text-lg font-bold">{product.price.toLocaleString()}</span>
               {product.oldPrice && (
                 <span className="text-xs line-through text-gray-500">{product.oldPrice.toLocaleString()}</span>

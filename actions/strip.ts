@@ -48,7 +48,7 @@ export async function createStripeCheckoutSession(formData: CheckoutFormData, ca
     // Create line items for Stripe
     const lineItems = cartItems.map((item) => ({
       price_data: {
-        currency: "aed",
+        currency: "bdt",
         product_data: {
           name: item.title,
           images: [item.image],
@@ -78,7 +78,7 @@ export async function createStripeCheckoutSession(formData: CheckoutFormData, ca
             type: "fixed_amount",
             fixed_amount: {
               amount: shippingCost * 100,
-              currency: "aed",
+              currency: "bdt",
             },
             display_name: validatedData.shippingMethod === "express" ? "Express Shipping" : "Standard Shipping",
             delivery_estimate: {

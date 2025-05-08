@@ -50,7 +50,7 @@ export function OrderSummary() {
             <div className="space-y-3 text-sm">
               <div className="flex justify-between">
                 <span className="text-gray-600">Subtotal ({getItemCount()} items)</span>
-                <span>AED {getTotal().toFixed(2)}</span>
+                <span>BDT {getTotal().toFixed(2)}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-gray-600">Shipping Fee</span>
@@ -60,7 +60,7 @@ export function OrderSummary() {
                 <span>
                   Total <span className="text-gray-500 font-normal text-lg">(Inclusive of VAT)</span>
                 </span>
-                <span className="text-xl">AED {getTotal().toFixed(2)}</span>
+                <span className="text-xl">BDT {getTotal().toFixed(2)}</span>
               </div>
             </div>
           </div>
@@ -72,7 +72,7 @@ export function OrderSummary() {
               </div>
               <div className="flex-grow">
                 <p className="text-sm text-gray-600">
-                  Monthly payment plans from AED 500
+                  Monthly payment plans from BDT 500
                   <span className="text-[#f7b614] ml-1 cursor-pointer underline font-bold">View more details</span>
                 </p>
               </div>
@@ -96,7 +96,7 @@ export function OrderSummary() {
       <div className="mb-6 text-center">
         <div className="mb-2 font-medium">Buy Now, Pay Later With BestWareHub EMI</div>
         <p className="text-sm text-gray-600 mb-2">
-          Available when you spend AED 500 with select cards from the banks below.
+          Available when you spend BDT 500 with select cards from the banks below.
           <Link href="#" className="text-[#f7b614] ml-1 underline">
             Find out more
           </Link>

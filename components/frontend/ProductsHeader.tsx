@@ -40,7 +40,7 @@ const ProductsHeader = ({
       <div className="flex flex-col md:flex-row gap-4 md:items-center">
         <h1 className="text-gray-700 font-medium">
           <span className="text-blue-600 font-bold">{totalProducts}</span> Results for{" "}
-          <span className="font-semibold">"{subCategoryTitle} in UAE"</span>
+          <span className="font-semibold">"{subCategoryTitle} in BAN"</span>
         </h1>
 
         <div className="md:ml-auto flex items-center gap-2 md:gap-4">

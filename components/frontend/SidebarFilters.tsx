@@ -271,8 +271,8 @@ const SidebarFilters = ({
             <AccordionContent>
               <div className="space-y-4">
                 <div className="flex justify-between text-sm">
-                  <span>AED {priceValues[0]}</span>
-                  <span>AED {priceValues[1]}</span>
+                  <span>BDT {priceValues[0]}</span>
+                  <span>BDT {priceValues[1]}</span>
                 </div>
                 <Slider
                   min={priceRange.min}

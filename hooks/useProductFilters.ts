@@ -172,11 +172,11 @@ export const useProducts = (subCategorySlug: string) => {
     const minPrice = searchParams.get("minPrice")
     const maxPrice = searchParams.get("maxPrice")
     if (minPrice && maxPrice) {
-      filters.push(`Price: AED ${minPrice} - AED ${maxPrice}`)
+      filters.push(`Price: BDT ${minPrice} - BDT ${maxPrice}`)
     } else if (minPrice) {
-      filters.push(`Price: Min AED ${minPrice}`)
+      filters.push(`Price: Min BDT ${minPrice}`)
     } else if (maxPrice) {
-      filters.push(`Price: Max AED ${maxPrice}`)
+      filters.push(`Price: Max BDT ${maxPrice}`)
     }
 
     // Add rating filter

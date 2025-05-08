@@ -25,7 +25,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ category, departmentSlug })
   const hasDiscount = Math.random() > 0.5;
   const discountPercentage = Math.floor(Math.random() * 70) + 10;
   const fromPrice = Math.floor(Math.random() * 500) + 10;
-  const currency = "AED";
+  const currency = "BDT";
 
   return (
     <Link href={href}>

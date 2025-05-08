@@ -283,7 +283,7 @@ export function CheckoutForm({ userId, userData }: { userId: string; userData?: 
                               </FormControl>
                               <div className="flex justify-between">
                                 <FormLabel className="font-semibold cursor-pointer">Express Shipping</FormLabel>
-                                <span className="font-medium">AED 25.00</span>
+                                <span className="font-medium">BDT 25.00</span>
                               </div>
                               <p className="text-sm text-muted-foreground">Delivery in 1-2 business days</p>
                             </FormItem>
@@ -347,7 +347,7 @@ export function CheckoutForm({ userId, userData }: { userId: string; userData?: 
                           />
                         </div>
                         <div className="text-sm">
-                          Pay 4 interest free payments of AED {(getTotal() / 4).toFixed(2)}
+                          Pay 4 interest free payments of BDT {(getTotal() / 4).toFixed(2)}
                           <a href="#" className="block text-blue-500">
                             Learn more
                           </a>
@@ -363,7 +363,7 @@ export function CheckoutForm({ userId, userData }: { userId: string; userData?: 
                           />
                         </div>
                         <div className="text-sm">
-                          Split in 4 payments of AED {(getTotal() / 4).toFixed(2)}. No interest. No late fees.
+                          Split in 4 payments of BDT {(getTotal() / 4).toFixed(2)}. No interest. No late fees.
                           <a href="#" className="block text-blue-500">
                             Learn more
                           </a>

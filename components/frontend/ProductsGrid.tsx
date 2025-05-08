@@ -193,7 +193,7 @@ const ProductsGrid = ({
                       <span className="ml-1 text-gray-500">({product.reviews.toLocaleString()})</span>
                     </div>
                     <div className="flex items-center gap-1">
-                      <span className="text-sm font-medium">AED</span>
+                      <span className="text-sm font-medium">BDT</span>
                       <span className="text-lg font-bold">{product.price.toLocaleString()}</span>
                       {product.oldPrice && (
                         <>

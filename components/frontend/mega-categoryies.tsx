@@ -190,11 +190,11 @@ export default function MegaCategory() {
                     <div className="flex items-baseline gap-2">
                       {product.isDiscount && product.salePrice ? (
                         <>
-                          <span className="text-gray-400 text-xs line-through">{product.productPrice} AED</span>
-                          <span className="text-base font-bold">{product.salePrice} AED</span>
+                          <span className="text-gray-400 text-xs line-through">{product.productPrice} BDT</span>
+                          <span className="text-base font-bold">{product.salePrice} BDT</span>
                         </>
                       ) : (
-                        <span className="text-base font-bold">{product.productPrice} AED</span>
+                        <span className="text-base font-bold">{product.productPrice} BDT</span>
                       )}
                     </div>
                     <div className="flex justify-between items-start gap-2">

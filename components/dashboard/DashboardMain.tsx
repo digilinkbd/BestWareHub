@@ -56,7 +56,7 @@ export default function AdminDashboard({ userName = "Admin" }: { userName?: stri
   const formatCurrency = (amount: number) => {
     return new Intl.NumberFormat("en-US", {
       style: "currency",
-      currency: "USD",
+      currency: "BDT",
       minimumFractionDigits: 2,
     }).format(amount)
   }
