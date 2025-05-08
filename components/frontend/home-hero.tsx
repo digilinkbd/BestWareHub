@@ -173,7 +173,7 @@ function HomeHero() {
             ) : (
               <div className="h-full w-full rounded-sm overflow-hidden">
                 <img
-                  src="/front-images/left-banner.png"
+                  src="/front-images/left-banner.jpg"
                   alt="Fashion Deals"
                   className="w-full h-full object-cover"
                 />
