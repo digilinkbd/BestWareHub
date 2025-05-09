@@ -47,7 +47,7 @@ export const columns: ColumnDef<ProductWithRelations>[] = [
   {
     accessorKey: "productPrice",
     header: "Price",
-    cell: ({ row }) => `$${row.original.productPrice.toFixed(2)}`,
+    cell: ({ row }) => `Tk.${row.original.productPrice.toFixed(2)}`,
   },
   {
     accessorKey: "productStock",

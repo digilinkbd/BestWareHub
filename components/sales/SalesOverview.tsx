@@ -93,7 +93,7 @@ export function SalesOverview({ data, userRole }: SalesOverviewProps) {
     >
       <StatCard
         title="Total Sales"
-        value={`$${data.totalSalesAmount.toFixed(2)}`}
+        value={`Tk. ${data.totalSalesAmount.toFixed(2)}`}
         description={`From ${data.totalSalesCount} orders`}
         config={statsConfig.totalSales}
       />
@@ -108,14 +108,14 @@ export function SalesOverview({ data, userRole }: SalesOverviewProps) {
       {userRole === "admin" ? (
         <StatCard
           title="Total Commission"
-          value={`$${data.totalCommission.toFixed(2)}`}
+          value={`Tk. ${data.totalCommission.toFixed(2)}`}
           description="Platform earnings"
           config={statsConfig.totalCommission}
         />
       ) : (
         <StatCard
           title="Average Order Value"
-          value={`$${data.totalSalesCount > 0 ? (data.totalSalesAmount / data.totalSalesCount).toFixed(2) : "0.00"}`}
+          value={`Tk. ${data.totalSalesCount > 0 ? (data.totalSalesAmount / data.totalSalesCount).toFixed(2) : "0.00"}`}
           description="Per order"
           config={statsConfig.avgOrderValue}
         />

@@ -543,10 +543,10 @@ export default function ProductForm({ editingId, initialData }: ProductFormProps
                             )}
                           </div>
                           {/* Sale Price */}
-                          {/* <div>
+                          <div>
                             <label className="text-sm font-medium mb-2 block">Sale Price (Optional)</label>
                             <Input type="number" {...form.register("salePrice")} placeholder="Discounted price" />
-                          </div> */}
+                          </div>
                           {/* Stock */}
                           <div>
                             <label className="text-sm font-medium mb-2 block">Product Stock</label>
@@ -617,7 +617,7 @@ export default function ProductForm({ editingId, initialData }: ProductFormProps
                               <p className="text-sm text-muted-foreground">Show this product in featured sections</p>
                             </div>
                             <Switch checked={form.watch("isFeatured")}
-                              onCheckedChange={(value) => form.setValue("isFeatured", value)} disabled/>
+                              onCheckedChange={(value) => form.setValue("isFeatured", value)}/>
                           </div>
 
                           <div className="flex flex-row items-center justify-between rounded-lg border p-4">

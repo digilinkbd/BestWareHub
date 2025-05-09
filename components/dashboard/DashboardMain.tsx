@@ -81,7 +81,7 @@ export default function AdminDashboard({ userName = "Admin" }: { userName?: stri
       icon: CircleDollarSign,
       description: "Total revenue across all sales",
       trend: 12,
-      prefix: "$",
+      prefix: "Tk.",
       variant: "admin" as const,
     },
     {
@@ -167,12 +167,12 @@ function SalesTrendChart({ data }: { data: any[] }) {
         <YAxis
           tickLine={false}
           axisLine={false}
-          tickFormatter={(value) => `$${value.toLocaleString()}`}
+          tickFormatter={(value) => `Tk. ${value.toLocaleString()}`}
           tick={{ fontSize: 12 }}
           dx={-10}
         />
         <Tooltip
-          formatter={(value: number) => [`$${value.toLocaleString()}`, "Revenue"]}
+          formatter={(value: number) => [`Tk. ${value.toLocaleString()}`, "Revenue"]}
           labelFormatter={(label) => `Date: ${label}`}
           contentStyle={{
             backgroundColor: "white",
@@ -295,7 +295,7 @@ function CategoryDistributionChart({ data }: { data: any[] }) {
           lineName="Units Sold"
           lineColor="#06b6d4"
           xAxisKey="date"
-          yAxisFormatter={(value) => `$${value.toLocaleString()}`}
+          yAxisFormatter={(value) => `Tk. ${value.toLocaleString()}`}
           className="lg:col-span-2"
         />
 
@@ -365,7 +365,7 @@ function CategoryDistributionChart({ data }: { data: any[] }) {
           }))}
           dataKeys={[{ key: "revenue", name: "Revenue", color: "#8b5cf6" }]}
           xAxisKey="name"
-          yAxisFormatter={(value) => `$${value.toLocaleString()}`}
+          yAxisFormatter={(value) => `Tk. ${value.toLocaleString()}`}
         />
       </div>
       

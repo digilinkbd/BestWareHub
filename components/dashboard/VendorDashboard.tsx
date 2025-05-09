@@ -29,7 +29,7 @@ export default function VendorDashboard({ userName, vendorId }: { userName: stri
       icon: TrendingUp,
       description: "Total revenue across all sales",
       trend: 12,
-      prefix: "$",
+      prefix: "Tk.",
       variant: "Vendor" as const,
     },
     {

@@ -54,7 +54,7 @@ export default function UserDashboard({ userName, userId }: { userName: string; 
       icon: ShoppingCart,
       description: "Lifetime spending",
       trend: 12,
-      prefix: "$",
+      prefix: "Tk.",
       variant: "vendor",
     },
   ]

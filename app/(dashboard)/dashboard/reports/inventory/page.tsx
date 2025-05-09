@@ -164,7 +164,7 @@ export default function InventoryDashboard() {
               icon={<DollarSign className="h-5 w-5 text-emerald-500" />}
               description="Total value of inventory"
               trend={data?.overview.valueTrend || 0}
-              prefix="$"
+              prefix="Tk."
             />
             <MetricCard
               title="Out of Stock"
@@ -429,12 +429,12 @@ function InventoryValueChart({ data }: { data: any[] }) {
         <YAxis
           tickLine={false}
           axisLine={false}
-          tickFormatter={(value) => `$${value.toLocaleString()}`}
+          tickFormatter={(value) => `Tk. ${value.toLocaleString()}`}
           tick={{ fontSize: 12 }}
           dx={-10}
         />
         <Tooltip
-          formatter={(value: number) => [`$${value.toLocaleString()}`, "Value"]}
+          formatter={(value: number) => [`Tk. ${value.toLocaleString()}`, "Value"]}
           labelFormatter={(label) => `Date: ${label}`}
           contentStyle={{
             backgroundColor: "white",
@@ -862,11 +862,11 @@ function TopVendorsBySalesChart({ data }: { data: any[] }) {
           tickLine={false}
           axisLine={false}
           tick={{ fontSize: 12 }}
-          tickFormatter={(value) => `$${value.toLocaleString()}`}
+          tickFormatter={(value) => `Tk. ${value.toLocaleString()}`}
         />
         <YAxis type="category" dataKey="name" tickLine={false} axisLine={false} tick={{ fontSize: 12 }} width={100} />
         <Tooltip
-          formatter={(value: number) => [`$${value.toLocaleString()}`, "Sales"]}
+          formatter={(value: number) => [`Tk. ${value.toLocaleString()}`, "Sales"]}
           contentStyle={{
             backgroundColor: "white",
             borderRadius: "0.375rem",

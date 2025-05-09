@@ -110,7 +110,7 @@ export default function ProductAnalyticsPage() {
               icon={<DollarSign className="h-5 w-5 text-emerald-500" />}
               description="From product sales"
               trend={data?.overview.revenueTrend || 0}
-              prefix="$"
+              prefix="Tk."
             />
             <MetricCard
               title="Out of Stock"
@@ -285,12 +285,12 @@ function SalesTrendChart({ data }: { data: any[] }) {
         <YAxis
           tickLine={false}
           axisLine={false}
-          tickFormatter={(value) => `$${value.toLocaleString()}`}
+          tickFormatter={(value) => `Tk. ${value.toLocaleString()}`}
           tick={{ fontSize: 12 }}
           dx={-10}
         />
         <Tooltip
-          formatter={(value: number) => [`$${value.toLocaleString()}`, "Revenue"]}
+          formatter={(value: number) => [`Tk. ${value.toLocaleString()}`, "Revenue"]}
           labelFormatter={(label) => `Date: ${label}`}
           contentStyle={{
             backgroundColor: "white",
@@ -531,12 +531,12 @@ function BrandPerformanceChart({ data }: { data: any[] }) {
         <YAxis
           tickLine={false}
           axisLine={false}
-          tickFormatter={(value) => `$${value.toLocaleString()}`}
+          tickFormatter={(value) => `Tk. ${value.toLocaleString()}`}
           tick={{ fontSize: 12 }}
           dx={-10}
         />
         <Tooltip
-          formatter={(value: number) => [`$${value.toLocaleString()}`, "Revenue"]}
+          formatter={(value: number) => [`Tk. ${value.toLocaleString()}`, "Revenue"]}
           contentStyle={{
             backgroundColor: "white",
             borderRadius: "0.375rem",
