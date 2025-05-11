@@ -105,7 +105,7 @@ export const OrderConfirmationEmail: React.FC<OrderConfirmationEmailProps> = ({
                 </Column>
                 <Column align="right">
                   <Text style={summaryValue}>
-                    ${order.shippingMethod === "express" ? "25.00" : "0.00"}
+                    ${order.shippingMethod === "express" ? "50.00" : "0.00"}
                   </Text>
                 </Column>
               </Row>

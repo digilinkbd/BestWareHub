@@ -10,7 +10,7 @@ import { Check, ArrowRight } from 'lucide-react'
 const pricingPlans = [
   {
     name: "Starter",
-    price: "$29",
+    price: "BDT 3000",
     description: "Perfect for new sellers just getting started",
     features: [
       "Up to 100 product listings",
@@ -24,7 +24,7 @@ const pricingPlans = [
   },
   {
     name: "Professional",
-    price: "$79",
+    price: "BDT 7000",
     description: "For growing businesses ready to scale",
     features: [
       "Unlimited product listings",
@@ -39,7 +39,7 @@ const pricingPlans = [
   },
   {
     name: "Enterprise",
-    price: "$199",
+    price: "BDT 10,000",
     description: "For established businesses with high volume",
     features: [
       "Unlimited product listings",

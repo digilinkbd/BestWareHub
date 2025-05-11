@@ -55,10 +55,10 @@ export default function HomeHeader({ searchQuery, user }: NavProps) {
               whileTap={{ scale: 0.95 }}
             >
               <Image
-                src="https://f.nooncdn.com/s/app/com/common/images/flags/ae.svg"
-                alt="BD Flag"
-                width={20}
-                height={20}
+                src="https://flagcdn.com/bd.svg"
+                alt=""
+                width={8}
+                height={8}
                 className="h-8 w-8"
               />
               <div className="flex flex-col font-medium items-start text-sm">

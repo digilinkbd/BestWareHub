@@ -111,7 +111,7 @@ export default async function Page({
                 "@type": "Offer",
                 url: getFullUrl(`/p/${product.slug}`),
                 price: product.salePrice || product.productPrice,
-                priceCurrency: "bdt",
+                priceCurrency: "BDT",
                 availability:
                   product.productStock && product.productStock > 0
                     ? "https://schema.org/InStock"
@@ -132,7 +132,7 @@ export default async function Page({
                   shippingRate: {
                     "@type": "MonetaryAmount",
                     value: 0,
-                    currency: "bdt",
+                    currency: "BDT",
                   },
                   deliveryTime: {
                     "@type": "ShippingDeliveryTime",

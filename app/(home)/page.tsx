@@ -35,6 +35,12 @@ export default function HomePage() {
         products={newArrivals}
         isLoading={isLoadingNewArrivals}
       />
+       {/* Featured Products Section */}
+      <RecommendedProducts
+        title={{ highlight: "BEST", regular: "FEATURED ONES" }}
+        products={featuredProducts}
+        isLoading={isLoadingFeatured}
+      />
 
       {/* First Dynamic Department - Using first department if available */}
       {departments && departments.length > 0 && (
@@ -49,14 +55,6 @@ export default function HomePage() {
           isLoading={isLoadingDepartments}
         />
       )}
-
-      {/* Featured Products Section */}
-      <RecommendedProducts
-        title={{ highlight: "BEST", regular: "FEATURED ONES" }}
-        products={featuredProducts}
-        isLoading={isLoadingFeatured}
-      />
-
       <HomeCamp />
 
       {/* Second Dynamic Department - Using second department if available */}
@@ -76,14 +74,14 @@ export default function HomePage() {
       {/* Third Dynamic Department - Electronics */}
       {departments && departments.length > 2 && (
         <DynamicDepartments
-          departmentSlug={departments[2]?.slug}
+          departmentSlug={departments[7]?.slug}
           title={{
             mainText: "EXPLORE",
             highlightText: "ELECTRONICS"
           }}
           bgColor="bg-[#FFFFFF]"
           showPagination={false}
-          viewAllLink={`/department/${departments[2]?.slug}`}
+          viewAllLink={`/department/${departments[7]?.slug}`}
           isLoading={isLoadingDepartments}
         />
       )}
